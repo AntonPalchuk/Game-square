@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Game</title>
+</head>
+<body>
+  <div id="mainMenu">
+    <button type="submit" name="button" id="start" class="st">START</button>
+    <button type="submit" name="button" id="option" class="st">OPTION</button>
+    <form id="form">
+      <div>
+        <p>Size main field</p>
+        <input type="number"  value="500" placeholder="Write size main field in the px" id="fieldOpt">
+      </div>
+      <div>
+      <p>Size square field</p>
+        <input type="number"  value="20" placeholder="Write size square field in the px" id="squareOpt">
+      </div>
+      <div>
+        <p>Speed</p>
+        <input type="number"  value="5" placeholder="Write size square field in the px" list="speed" id="speedOpt" max="10" min="1">
+         <datalist id="speed">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </datalist>
+      </div>
+      <div>
+        <p>Time game(in seconds)</p>
+       
+      <input type="number" name="" value="30" placeholder="Write time" id="timeOpt">
+      </div>
+      
+    </form>
+    <button type="button" id="button">PLAY</button>
+  </div>
+  <div id="div"></div>
+  <div class="square" id="main">
+    <div id="mini"></div>
+
+  </div>
+    <div class=result id="result">
+    </div>
+
+
+
+  <script type="text/javascript" src="index.js">
+  </script>
+</body>
+</html>
